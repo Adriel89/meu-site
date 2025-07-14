@@ -151,8 +151,8 @@
       <h2>Entre em contato</h2>
       <p>Envie uma mensagem diretamente pelo formulário abaixo.</p>
     </header>
-    <div class="row" style="justify-content: center;"> <!-- Centraliza horizontalmente -->
-      <div class="col-10 col-12-small"> <!-- Reduz um pouco a largura e centraliza -->
+    <div class="row" style="display: flex; justify-content: center; flex-wrap: wrap;">
+      <div class="col-12 col-12-small">
         <form method="POST" action="https://formspree.io/f/xwpqejgq">
           <div class="row gtr-50">
             <div class="col-6 col-12-small">
@@ -164,6 +164,10 @@
             <div class="col-12">
               <textarea name="message" placeholder="Digite sua mensagem..." rows="6" required></textarea>
             </div>
+            <div class="col-12">
+              <!-- Campo antispam -->
+              <input type="text" name="_gotcha" style="display:none">
+            </div>
             <div class="col-12" style="text-align: center;">
               <input type="submit" value="Enviar mensagem" class="button primary" />
             </div>
@@ -173,8 +177,6 @@
     </div>
   </div>
 </article>
-
-
 
 
 
